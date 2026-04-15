@@ -9,10 +9,6 @@ from dotenv import load_dotenv
 from src.prompt import *
 import os
 
-if 'SSL_CERT_FILE' in os.environ:
-    del os.environ['SSL_CERT_FILE']
-
-
 app = Flask(__name__)
 
 
